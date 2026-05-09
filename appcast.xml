@@ -247,5 +247,16 @@
                        sparkle:edSignature="hZ03iVXUaJLLhxt5MYzOxKt2Qtg9TyXm+YOEgakf1j1ck9v5H3fAM2CBIuXa7Obm5Td61DqC61i1Ov5Cd/ueAg=="
                        length="28719344" />
         </item>
+        <item>
+            <title>Version 1.4.2</title>
+            <pubDate>Sun, 10 May 2026 00:32:09 +0700</pubDate>
+            <sparkle:version>202605100021</sparkle:version>
+            <sparkle:shortVersionString>1.4.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.4.2/krust-1.4.2.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="5CdkMR4QQIOaZ/5cFEYIKR9yz5NGQJnEba+FbzhAciLCoOaUInK09OLFZwDWT5RwZVOVGuf1IhYdT/lll45JBA=="
+                       length="37243933" />
+        </item>
     </channel>
 </rss>
