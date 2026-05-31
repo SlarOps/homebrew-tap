@@ -1,6 +1,6 @@
 cask "krust" do
-  version "1.4.7"
-  sha256 "34a932d2cdbe7467766268b0a762d3631f82d34e4624850516510d2cf258b207"
+  version "1.4.8"
+  sha256 "7e39296db294aae22d307accfdb2adcb540b2364abf9fb30ed0e296c2e1c6601"
 
   url "https://github.com/vanchonlee/homebrew-tap/releases/download/v#{version}/krust-#{version}.dmg",
       verified: "github.com/vanchonlee/homebrew-tap/"

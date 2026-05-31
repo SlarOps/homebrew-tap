@@ -313,5 +313,68 @@
                        sparkle:edSignature="sNvnG331eY4CwtrI41AkZe7yqAWtiRdAe77gGlFr4q4dggNtWGladXE44PQnnpQ3cFGf4E5c7oyQNe+2nrVrDA=="
                        length="41355539" />
         </item>
+        <item>
+            <title>Version 1.4.8</title>
+            <pubDate>Sun, 31 May 2026 22:25:22 +0700</pubDate>
+            <sparkle:version>202605312218</sparkle:version>
+            <sparkle:shortVersionString>1.4.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font: -apple-system-body;
+  color: #f2f4f7;
+  background: #111418;
+  margin: 0;
+  padding: 18px 20px;
+}
+h1 {
+  font: -apple-system-title2;
+  margin: 0 0 14px;
+}
+h2 {
+  font: -apple-system-headline;
+  margin: 18px 0 8px;
+}
+ul {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+}
+li {
+  margin: 6px 0;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+</style>
+</head>
+<body>
+<h1>Release notes for version 1.4.8</h1>
+<h2>RBAC topology</h2>
+<ul>
+  <li>Show workloads that use a ServiceAccount in RBAC topology from both Access Control and RBAC Who Can.</li>
+  <li>Reuse pod/job cache for workload links instead of refetching every workload on topology open.</li>
+</ul>
+<h2>Inspectors and tables</h2>
+<ul>
+  <li>Improve resource inspector formatting, chips, and table sizing for common Kubernetes resources.</li>
+  <li>Improve service port and ReplicaSet display to keep tables responsive when the inspector is open.</li>
+</ul>
+<h2>Stability</h2>
+<ul>
+  <li>Add focused RBAC topology unit coverage and regenerate native bindings for the new cache-aware APIs.</li>
+</ul>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.4.8/krust-1.4.8.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="kuQ5VmTzBy0JE+rq8dHgSrg8iY9YywbOknb+acidXOJ54+sXUl7Sent9tiQfgyHYpFwfcaMreopOy/Ni31xtDg=="
+                       length="42703718" />
+        </item>
     </channel>
 </rss>
