@@ -376,5 +376,72 @@ code {
                        sparkle:edSignature="kuQ5VmTzBy0JE+rq8dHgSrg8iY9YywbOknb+acidXOJ54+sXUl7Sent9tiQfgyHYpFwfcaMreopOy/Ni31xtDg=="
                        length="42703718" />
         </item>
+        <item>
+            <title>Version 1.4.9</title>
+            <pubDate>Sat, 06 Jun 2026 16:52:48 +0700</pubDate>
+            <sparkle:version>202606061630</sparkle:version>
+            <sparkle:shortVersionString>1.4.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font: -apple-system-body;
+  color: #f2f4f7;
+  background: #111418;
+  margin: 0;
+  padding: 18px 20px;
+}
+h1 {
+  font: -apple-system-title2;
+  margin: 0 0 14px;
+}
+h2 {
+  font: -apple-system-headline;
+  margin: 18px 0 8px;
+}
+ul {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+}
+li {
+  margin: 6px 0;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+</style>
+</head>
+<body>
+<h1>Release notes for version 1.4.9</h1>
+<h2>Inspector, Agent, and Native Describe</h2>
+<ul>
+  <li>Add shared inspector tabs so resource details, native describe output, and Krust Agent can live in the same inspector without reparenting the main table.</li>
+  <li>Keep the Agent conversation shared across resource views while restoring model selection, new chat, and prompt suggestions in compact inspector mode.</li>
+  <li>Add native describe access for pods and keep large describe output on the existing SwiftUI renderer with scroll behavior that matches other inspectors.</li>
+</ul>
+<h2>Resource Visibility and Metrics</h2>
+<ul>
+  <li>Add Prometheus-backed CPU and memory charts to pod and workload inspectors when a verified Prometheus service is configured.</li>
+  <li>Improve pod, workload, storage, networking, configuration, and access-control inspectors with cache-first data, colored labels, compact chips, and better scanability.</li>
+  <li>Add pod exec entry points from the pod inspector so common shell access is available without opening the row context menu first.</li>
+</ul>
+<h2>RBAC, CRDs, Helm, and k9r</h2>
+<ul>
+  <li>Expand RBAC topology so subjects, bindings, roles, rules, and workload usage are easier to trace visually.</li>
+  <li>Improve CRD, native describe, Helm, logs, and local routing workflows for large clusters and long values.</li>
+  <li>Continue k9r parity work with more Kubernetes resource actions, keyboard flows, and shared Rust-core behavior.</li>
+</ul>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.4.9/krust-1.4.9.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="GY7MUoxs7Vm993xeMqMjGuEUqqhqrB0jf5YdaZraMObyazIuXtR5vcT9bhs3XZjiNshk6QHdBH12l7e0KGCPDQ=="
+                       length="42851963" />
+        </item>
     </channel>
 </rss>
