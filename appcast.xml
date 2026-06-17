@@ -485,9 +485,23 @@ code {
 </head>
 <body>
 <h1>Release notes for version 1.5.0</h1>
-<h2>Updates</h2>
+<h2>Local Routing and Packet Tunnel</h2>
 <ul>
-  <li>This release includes stability improvements and bug fixes.</li>
+  <li>Harden packet tunnel relay cleanup so local routing sessions release resources more reliably when the tunnel stops or reconnects.</li>
+  <li>Remove the legacy DNS manager path and align entitlements with the current packet tunnel based local routing architecture.</li>
+  <li>Keep DNS, port-forward, and tunnel state easier to reason about during release and troubleshooting flows.</li>
+</ul>
+<h2>Port Forwarding Feedback</h2>
+<ul>
+  <li>Improve port-forward sheet and toolbar feedback so active routes, DNS-backed URLs, and copy/open actions are clearer while a forward is running.</li>
+  <li>Make service, pod, deployment, daemon set, and stateful set port-forward actions report routing state more consistently.</li>
+  <li>Preserve stable service URL behavior across DNS-enabled port-forward workflows.</li>
+</ul>
+<h2>Kube Context Source Selection</h2>
+<ul>
+  <li>Preserve kubeconfig source selection when switching contexts, including environments with duplicate context names across multiple kubeconfig files.</li>
+  <li>Add source-aware Rust core APIs for resolving, setting, and listing kube contexts without flattening kubeconfig state through external CLIs.</li>
+  <li>Keep namespace and resource watchers aligned with the selected context source after context changes.</li>
 </ul>
 </body></html>
             ]]></description>
