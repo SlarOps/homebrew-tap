@@ -510,5 +510,60 @@ code {
                        sparkle:edSignature="wUZbsrSy9OIobUmHkKKBMM+7iWbmidnCHdwoaCuQzqNJK6ZsuWIaBvanExtzep3hg3WfRuzBtYRvJFEcPv14Bg=="
                        length="43206844" />
         </item>
+        <item>
+            <title>Version 1.5.1</title>
+            <pubDate>Mon, 22 Jun 2026 09:50:33 +0700</pubDate>
+            <sparkle:version>202606220946</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font: -apple-system-body;
+  color: #f2f4f7;
+  background: #111418;
+  margin: 0;
+  padding: 18px 20px;
+}
+h1 {
+  font: -apple-system-title2;
+  margin: 0 0 14px;
+}
+h2 {
+  font: -apple-system-headline;
+  margin: 18px 0 8px;
+}
+ul {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+}
+li {
+  margin: 6px 0;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+</style>
+</head>
+<body>
+<h1>Release notes for version 1.5.1</h1>
+<h2>Log Viewer Reliability</h2>
+<ul>
+  <li>Fix the jump-to-bottom button in pod logs so clicking it immediately scrolls to the newest log line.</li>
+  <li>Apply the same jump-to-bottom behavior to aggregated deployment and multi-pod log windows.</li>
+  <li>Keep automatic live-log following throttled for performance while allowing manual jump actions to run immediately.</li>
+</ul>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.5.1/krust-1.5.1.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="zXM/7K7AcJAa/+JXzEaj2jkOUhw7mYxtGVsOyFUTU2Q9Yzx/ZiSxoQWtdiP5VSALowCC7/e0dfQFdtiQBCokDA=="
+                       length="46450075" />
+        </item>
     </channel>
 </rss>
