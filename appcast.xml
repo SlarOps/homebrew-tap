@@ -565,5 +565,72 @@ code {
                        sparkle:edSignature="zXM/7K7AcJAa/+JXzEaj2jkOUhw7mYxtGVsOyFUTU2Q9Yzx/ZiSxoQWtdiP5VSALowCC7/e0dfQFdtiQBCokDA=="
                        length="46450075" />
         </item>
+        <item>
+            <title>Version 1.5.2</title>
+            <pubDate>Wed, 24 Jun 2026 11:06:36 +0700</pubDate>
+            <sparkle:version>202606241044</sparkle:version>
+            <sparkle:shortVersionString>1.5.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font: -apple-system-body;
+  color: #f2f4f7;
+  background: #111418;
+  margin: 0;
+  padding: 18px 20px;
+}
+h1 {
+  font: -apple-system-title2;
+  margin: 0 0 14px;
+}
+h2 {
+  font: -apple-system-headline;
+  margin: 18px 0 8px;
+}
+ul {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+}
+li {
+  margin: 6px 0;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+</style>
+</head>
+<body>
+<h1>Release notes for version 1.5.2</h1>
+<h2>Inspector Usability</h2>
+<ul>
+  <li>Add popover-based full-value viewing for resource chips, labels, annotations, selectors, conditions, and dense inspector lists.</li>
+  <li>Collapse long inspector groups after five items by default, with explicit Show more and Show less controls for pods, workloads, RBAC, Gateway, PDB, ConfigMap, Secret, LimitRange, and Node describe views.</li>
+  <li>Keep label and annotation chips compact while still making the full value selectable and copyable from the popover.</li>
+</ul>
+<h2>Pod and Resource Details</h2>
+<ul>
+  <li>Expand pod inspector coverage with richer pod identity, runtime, scheduling, container, volume, mount, security, and event details.</li>
+  <li>Show containers and volumes as compact expandable rows so users can scan names first and open details only when needed.</li>
+  <li>Move native describe output into inspector tabs for workload-style resource inspectors so UI details and native describe stay organized.</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+  <li>Remove duplicate node condition rendering when node inspector already shows the condition summary.</li>
+  <li>Fix long label chips so the chevron remains visible and clicking opens only the popover, not an inline expansion.</li>
+  <li>Improve chip contrast and copy behavior across resource inspectors.</li>
+</ul>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.5.2/krust-1.5.2.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="AJCbwc6GitZ2xvoEqAa0ycQtYqUZciCV7CTbcgfHvX5GJc/lNhuVgU9Ycqcqm5cSogLEmCYj/OUOkVoqmq4bCQ=="
+                       length="46566355" />
+        </item>
     </channel>
 </rss>
