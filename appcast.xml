@@ -632,5 +632,78 @@ code {
                        sparkle:edSignature="AJCbwc6GitZ2xvoEqAa0ycQtYqUZciCV7CTbcgfHvX5GJc/lNhuVgU9Ycqcqm5cSogLEmCYj/OUOkVoqmq4bCQ=="
                        length="46566355" />
         </item>
+        <item>
+            <title>Version 1.5.3</title>
+            <pubDate>Wed, 01 Jul 2026 14:08:15 +0700</pubDate>
+            <sparkle:version>202607011213</sparkle:version>
+            <sparkle:shortVersionString>1.5.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font: -apple-system-body;
+  color: #f2f4f7;
+  background: #111418;
+  margin: 0;
+  padding: 18px 20px;
+}
+h1 {
+  font: -apple-system-title2;
+  margin: 0 0 14px;
+}
+h2 {
+  font: -apple-system-headline;
+  margin: 18px 0 8px;
+}
+ul {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+}
+li {
+  margin: 6px 0;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+</style>
+</head>
+<body>
+<h1>Release notes for version 1.5.3</h1>
+<h2>DNS Proxy Stability</h2>
+<ul>
+  <li>Fix a DNS Proxy issue that could leave Krust unresponsive while local routing was starting.</li>
+  <li>Remove upstream DNS detection and forwarding from Krust&#x27;s scoped cluster-local DNS path.</li>
+  <li>Return local DNS failure responses for unmatched lookups instead of forwarding misses outside Krust.</li>
+</ul>
+<h2>Kubernetes API Reliability</h2>
+<ul>
+  <li>Disable the inner kube client fast retry loop so failed API connectivity no longer churns sockets through the packet tunnel.</li>
+  <li>Keep retry behavior controlled by Krust&#x27;s outer connection handling, with retry attempt and delay shown in connection errors.</li>
+  <li>Add connection startup tracing around pod watch init, prefetch, and first snapshot timing to make slow cluster loads measurable.</li>
+</ul>
+<h2>macOS Startup and Auth Plugins</h2>
+<ul>
+  <li>Remove shell-spawned PATH discovery from app startup so launch no longer waits on user shell plugins.</li>
+  <li>Recover missing kubeconfig auth plugins, including <code>gke-gcloud-auth-plugin</code>, only when needed by scanning shell config paths first and falling back to a bounded shell lookup.</li>
+  <li>Avoid flashing a transient auth-plugin-not-found error when Krust can recover the executable path immediately.</li>
+</ul>
+<h2>Release Hygiene</h2>
+<ul>
+  <li>Gate debug self-tests behind <code>KRUST_RUN_SELF_TESTS=1</code> so Debug builds no longer run them during normal app startup.</li>
+  <li>Align DNS Proxy documentation with the current Packet Tunnel scoped DNS architecture.</li>
+  <li>Keep the bundled <code>k9r</code> command version aligned with Krust 1.5.3.</li>
+</ul>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.5.3/krust-1.5.3.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="nA1KOgNBKmKaCVMeGwC0FnJj49wb/cKOiGPFcZc6Hwfw8JeYHsihmZ2VFW/E0zI9NvqvAWS4nd1jF0K5lOx9Dw=="
+                       length="46369703" />
+        </item>
     </channel>
 </rss>
