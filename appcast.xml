@@ -705,5 +705,59 @@ code {
                        sparkle:edSignature="nA1KOgNBKmKaCVMeGwC0FnJj49wb/cKOiGPFcZc6Hwfw8JeYHsihmZ2VFW/E0zI9NvqvAWS4nd1jF0K5lOx9Dw=="
                        length="46369703" />
         </item>
+        <item>
+            <title>Version 1.5.4</title>
+            <pubDate>Thu, 23 Jul 2026 10:36:47 +0700</pubDate>
+            <sparkle:version>202607230902</sparkle:version>
+            <sparkle:shortVersionString>1.5.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body { font: -apple-system-body; color: #f2f4f7; background: #111418; margin: 0; padding: 18px 20px; }
+h1 { font: -apple-system-title2; margin: 0 0 14px; }
+h2 { font: -apple-system-headline; margin: 18px 0 8px; }
+ul { margin: 0 0 0 1.2em; padding: 0; }
+li { margin: 6px 0; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+</style>
+</head>
+<body>
+<h1>Release notes for version 1.5.4</h1>
+<h2>Native Resource Navigation</h2>
+<ul>
+  <li>Navigate resource drilldowns with native push and pop behavior while preserving sidebar state, search, and window layout.</li>
+  <li>Open related Pods directly from custom resource instances through Kubernetes owner references, including nested controller chains.</li>
+  <li>Keep the UI-selected Kubernetes context authoritative for every drilldown without falling back to another cluster.</li>
+</ul>
+<h2>Faster Tables and Inspectors</h2>
+<ul>
+  <li>Reduce unnecessary table reloads and update only rows whose rendered data changed.</li>
+  <li>Keep native table column resizing stable across tab switches, inspector changes, and narrow split panes.</li>
+  <li>Improve inspector and sidebar responsiveness while retaining native macOS selection and split-view behavior.</li>
+</ul>
+<h2>Search and Action Discovery</h2>
+<ul>
+  <li>Unify local and global search in the navigation search field with keyboard-first suggestions.</li>
+  <li>Make contextual resource actions such as split, pin, copy, open, and drilldown discoverable from object-level menus.</li>
+  <li>Streamline Settings and plugin controls with compact native navigation and action menus.</li>
+</ul>
+<h2>Agent, MCP, and Reliability</h2>
+<ul>
+  <li>Add MCP OAuth, bundled plugin support, explicit tool refresh, and clearer tool availability state.</li>
+  <li>Harden Kubernetes watchers across reconnect and wake-from-sleep transitions so authoritative relists repair missed events.</li>
+  <li>Improve agent context handling, provider compatibility, and secure Apple-platform credential storage.</li>
+</ul>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.5.4/krust-1.5.4.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="kyZ3plMMOtImqESlvoYBcqRZ4gshaHCoCjb9qAk0r9wBa5xZOoe2p0LedgEcN0qG9MjnrMdbvfmQMECbhT5yCw=="
+                       length="47767894" />
+        </item>
     </channel>
 </rss>
