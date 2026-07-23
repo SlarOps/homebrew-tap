@@ -707,8 +707,8 @@ code {
         </item>
         <item>
             <title>Version 1.5.4</title>
-            <pubDate>Thu, 23 Jul 2026 10:36:47 +0700</pubDate>
-            <sparkle:version>202607230902</sparkle:version>
+            <pubDate>Thu, 23 Jul 2026 11:56:00 +0700</pubDate>
+            <sparkle:version>202607231146</sparkle:version>
             <sparkle:shortVersionString>1.5.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
@@ -756,8 +756,8 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
             ]]></description>
             <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.5.4/krust-1.5.4.dmg"
                        type="application/octet-stream"
-                       sparkle:edSignature="kyZ3plMMOtImqESlvoYBcqRZ4gshaHCoCjb9qAk0r9wBa5xZOoe2p0LedgEcN0qG9MjnrMdbvfmQMECbhT5yCw=="
-                       length="47767894" />
+                       sparkle:edSignature="mIyA2aF6mBGkrPnX2DRGgtrn8FSH/hzE+bmRjqMqxgHVKBwLI2VZ2hT2ssqzsaYPbVx07eODoH46LNLnVyhvDA=="
+                       length="47728503" />
         </item>
     </channel>
 </rss>
