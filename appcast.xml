@@ -759,5 +759,70 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
                        sparkle:edSignature="mIyA2aF6mBGkrPnX2DRGgtrn8FSH/hzE+bmRjqMqxgHVKBwLI2VZ2hT2ssqzsaYPbVx07eODoH46LNLnVyhvDA=="
                        length="47728503" />
         </item>
+        <item>
+            <title>Version 1.5.5</title>
+            <pubDate>Fri, 07 Aug 2026 12:26:05 +0700</pubDate>
+            <sparkle:version>202608071125</sparkle:version>
+            <sparkle:shortVersionString>1.5.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font: -apple-system-body;
+  color: #f2f4f7;
+  background: #111418;
+  margin: 0;
+  padding: 18px 20px;
+}
+h1 {
+  font: -apple-system-title2;
+  margin: 0 0 14px;
+}
+h2 {
+  font: -apple-system-headline;
+  margin: 18px 0 8px;
+}
+ul {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+}
+li {
+  margin: 6px 0;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+</style>
+</head>
+<body>
+<h1>Release notes for version 1.5.5</h1>
+<h2>Agent Conversation Stability</h2>
+<ul>
+  <li>Restore Agent conversations and tool activity after reopening Krust.</li>
+  <li>Keep streamed responses smooth and show reconnect progress when a provider connection is interrupted.</li>
+  <li>Preserve the chat reading position while content grows, the window is resized, or the user switches tabs and clusters.</li>
+</ul>
+<h2>Resource Selection and Inspectors</h2>
+<ul>
+  <li>Keep selected Pods stable across watcher refreshes and row reordering instead of clearing or returning to an older row.</li>
+  <li>Keep Deployment and StatefulSet inspector content synchronized without disrupting the current selection.</li>
+  <li>Improve native table width allocation when inspectors and split panes resize.</li>
+</ul>
+<h2>Interface Polish</h2>
+<ul>
+  <li>Update the Agent send control to a white button with a black arrow for clearer contrast.</li>
+</ul>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.5.5/krust-1.5.5.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="z8MfivEfAlVz+WGgKsx+mgRU539Gxxe6Wqk/eErPwMSv6xxHSgakb0o8HK6BLF6GsQNB9JiggmX8ZGRGGZ7iCg=="
+                       length="48772468" />
+        </item>
     </channel>
 </rss>
