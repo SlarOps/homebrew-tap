@@ -824,5 +824,72 @@ code {
                        sparkle:edSignature="z8MfivEfAlVz+WGgKsx+mgRU539Gxxe6Wqk/eErPwMSv6xxHSgakb0o8HK6BLF6GsQNB9JiggmX8ZGRGGZ7iCg=="
                        length="48772468" />
         </item>
+        <item>
+            <title>Version 1.5.6</title>
+            <pubDate>Tue, 25 Aug 2026 20:07:55 +0700</pubDate>
+            <sparkle:version>202608251949</sparkle:version>
+            <sparkle:shortVersionString>1.5.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font: -apple-system-body;
+  color: #f2f4f7;
+  background: #111418;
+  margin: 0;
+  padding: 18px 20px;
+}
+h1 {
+  font: -apple-system-title2;
+  margin: 0 0 14px;
+}
+h2 {
+  font: -apple-system-headline;
+  margin: 18px 0 8px;
+}
+ul {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+}
+li {
+  margin: 6px 0;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+</style>
+</head>
+<body>
+<h1>Release notes for version 1.5.6</h1>
+<h2>Agent and Plugin Workflows</h2>
+<ul>
+  <li>Add a versioned official plugin marketplace with install, update, and external CLI integrations.</li>
+  <li>Add Codex-style subagent orchestration and clearer native tool results for deeper investigations.</li>
+  <li>Keep healthy tools available when one plugin fails or reconnects.</li>
+</ul>
+<h2>Secure Connections and Approvals</h2>
+<ul>
+  <li>Add argument-aware tool approval policies with per-plugin overrides.</li>
+  <li>Complete MCP OAuth more reliably, including cancellation, token rotation, and credential recovery.</li>
+  <li>Configure OpenSearch and OpenSearch Operations independently, including separate endpoints and credentials.</li>
+</ul>
+<h2>Logs, Inspectors, and K9r</h2>
+<ul>
+  <li>Render ANSI colors and styles in live logs.</li>
+  <li>Keep the Agent inspector and conversation stable while typing search and navigating resources.</li>
+  <li>Simplify K9r resource deletion to y/n confirmation.</li>
+</ul>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.5.6/krust-1.5.6.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="/PNElQAXAmy95UDtMQpm9sUIRYsrdFrijR5ZqVuVfi9ehmxF97aU5i/qTzs8++ZtEU0cMq3ca/Bqa27/9S8UBw=="
+                       length="53632191" />
+        </item>
     </channel>
 </rss>
