@@ -891,5 +891,72 @@ code {
                        sparkle:edSignature="/PNElQAXAmy95UDtMQpm9sUIRYsrdFrijR5ZqVuVfi9ehmxF97aU5i/qTzs8++ZtEU0cMq3ca/Bqa27/9S8UBw=="
                        length="53632191" />
         </item>
+        <item>
+            <title>Version 1.5.7</title>
+            <pubDate>Fri, 04 Sep 2026 10:11:25 +0700</pubDate>
+            <sparkle:version>202609041005</sparkle:version>
+            <sparkle:shortVersionString>1.5.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font: -apple-system-body;
+  color: #f2f4f7;
+  background: #111418;
+  margin: 0;
+  padding: 18px 20px;
+}
+h1 {
+  font: -apple-system-title2;
+  margin: 0 0 14px;
+}
+h2 {
+  font: -apple-system-headline;
+  margin: 18px 0 8px;
+}
+ul {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+}
+li {
+  margin: 6px 0;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+</style>
+</head>
+<body>
+<h1>Release notes for version 1.5.7</h1>
+<h2>Experimental Google Cloud and GKE Connections</h2>
+<ul>
+  <li>Add an invite-only Google Cloud sign-in preview for Krust Pro using the native OAuth desktop flow.</li>
+  <li>Discover GKE clusters from an explicit project ID with identity, email, and read-only GKE scopes instead of broad project discovery.</li>
+  <li>Store managed credentials in macOS Keychain, refresh active sessions, support multiple Google accounts, and expose reconnect and disconnect controls in Connection Center.</li>
+</ul>
+<h2>Production Connection Reliability</h2>
+<ul>
+  <li>Reuse Kubernetes clients across context switches while isolating them by exact context and kubeconfig identity.</li>
+  <li>Bound client preparation, invalidate stale entries safely, and stagger watcher reconnects to reduce socket churn during failures.</li>
+  <li>Add connection diagnostics and preserve authoritative resource snapshots through reconnect and wake transitions.</li>
+</ul>
+<h2>Connection Center and Resource Navigation</h2>
+<ul>
+  <li>Manage cloud accounts, clusters, and local kubeconfigs from one native macOS sidebar.</li>
+  <li>Keep local kubeconfig connections Free while clearly labeling the managed GKE connector as Experimental and invite only.</li>
+  <li>Show newest Pods first by default so recent rollouts and failures surface immediately.</li>
+</ul>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.5.7/krust-1.5.7.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="tNcx+uG/dpzhz+WpsBrBdOOTXsI6X6xcJgtNvbci7jxA4OLAbUApZIuZbX3HVAb67FMFSv/56fn/F9SI8zD3Cg=="
+                       length="53359566" />
+        </item>
     </channel>
 </rss>
