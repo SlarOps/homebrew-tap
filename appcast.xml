@@ -958,5 +958,73 @@ code {
                        sparkle:edSignature="tNcx+uG/dpzhz+WpsBrBdOOTXsI6X6xcJgtNvbci7jxA4OLAbUApZIuZbX3HVAb67FMFSv/56fn/F9SI8zD3Cg=="
                        length="53359566" />
         </item>
+        <item>
+            <title>Version 1.5.8</title>
+            <pubDate>Sun, 06 Sep 2026 14:44:33 +0700</pubDate>
+            <sparkle:version>202609061426</sparkle:version>
+            <sparkle:shortVersionString>1.5.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>https://krust.io/docs/changelog/</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font: -apple-system-body;
+  color: #f2f4f7;
+  background: #111418;
+  margin: 0;
+  padding: 18px 20px;
+}
+h1 {
+  font: -apple-system-title2;
+  margin: 0 0 14px;
+}
+h2 {
+  font: -apple-system-headline;
+  margin: 18px 0 8px;
+}
+ul {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+}
+li {
+  margin: 6px 0;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+</style>
+</head>
+<body>
+<h1>Release notes for version 1.5.8</h1>
+<h2>Connection Reliability</h2>
+<ul>
+  <li>Fix cached Kubernetes clients that could keep an expired exec-auth TLS certificate after a context switch. This affected providers such as Teleport, where a fresh client can obtain a renewed credential while the kubeconfig file itself remains unchanged.</li>
+  <li>Rebuild only the affected context client after an expired or rejected client certificate. Other cluster connections remain warm and are not disconnected.</li>
+  <li>Make the same recovery policy apply consistently across Pod, workload, event, and other Kubernetes resource watchers.</li>
+  <li>Make the Pod connection Retry action refresh the selected context credentials before reconnecting.</li>
+  <li>Clear a context warning when the affected watcher resumes receiving data, while preserving warnings from any watcher that is still failing.</li>
+</ul>
+<h2>Privacy and Crash Diagnostics</h2>
+<ul>
+  <li>Add opt-in native crash reporting for macOS. Crash reporting is off by default and can be controlled in Settings.</li>
+  <li>Keep crash diagnostics limited to crash investigation: disable Sentry tracing, profiling, session tracking, breadcrumbs, automatic network capture, and failed-request capture.</li>
+  <li>Remove the experimental daily usage signal and its settings. Krust does not collect in-app usage analytics.</li>
+</ul>
+<h2>Why This Release</h2>
+<ul>
+  <li>Restore reliable connections for kubeconfig exec-auth users without giving up the fast context-switching cache introduced in v1.5.7.</li>
+  <li>Make crash investigation available with an explicit, narrow privacy boundary before broader distribution.</li>
+</ul>
+</body></html>
+            ]]></description>
+            <enclosure url="https://github.com/vanchonlee/homebrew-tap/releases/download/v1.5.8/krust-1.5.8.dmg"
+                       type="application/octet-stream"
+                       sparkle:edSignature="FzhSJZwp+Ie+9ZzzGfgPAAoydrzMjIO1t1vRgS9gXpOG2jwBotAlzqGb564SOe4v4WNya+6TWQzw48tFVgf2DQ=="
+                       length="54188494" />
+        </item>
     </channel>
 </rss>
